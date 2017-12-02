@@ -2,7 +2,6 @@ package sample
 
 import (
 	"bytes"
-	"os"
 	"strings"
 	"testing"
 )
@@ -14,9 +13,4 @@ func TestOutput(t *testing.T) {
 	if output != "test" {
 		t.Error("unexpected value")
 	}
-}
-
-func ExampleOutput() {
-	Output(os.Stdout, "test")
-	// Output: test
 }
